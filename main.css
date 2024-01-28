@@ -2,7 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
 }
+/* tools */
+.font-60{
+    font-size: 60px;
+}
+/* nav */
 .header{
     max-width: 1440px;
     display: flex;
@@ -41,7 +47,60 @@
 .nav__meniu{
     display: none;
 }
-@media screen  and (max-width: 926px){
+.nav__logo--img{
+    width: 100%;
+}
+/* main */
+.main{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    gap: 70px;
+}
+.main__conteiners{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.main__button__button{
+    width: 265px;
+    height: 68px;
+    border-radius: 14px;
+    background: var(--Dark, #191A23);
+    color: #ffffff;
+}
+.main__txt{
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main__button{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.social{
+    max-width: 1200px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.social__img--img{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+/* media cueri*/
+@media screen  and (max-width: 1070px){
     .nav__links{
         display: none;
     }
@@ -50,5 +109,45 @@
         margin-right: 10px;
         align-items: center;
 
+    }
+    .main__button{
+        align-items: center;
+    }
+    .header{
+        height: 70px;
+        align-items: center;
+    }
+    .main__conteiners{
+        gap: 30px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .main__button__button{
+        width: 390px;
+        height: 68px;
+    }
+    .social{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+@media screen  and (max-width: 600px){
+    .font-60{
+        font-size: 43px;
+    }
+    .main__txt{
+        max-width: 350px;
+    }
+    .nav__logo{
+        max-width: 144px;
+        height: 25px;
+    }
+    .main__img{
+        width: 360px;
+        height: 310px;
+    }
+    .main__img--img{
+        max-width: 100%;
+        height: 100%;
     }
 }
