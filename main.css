@@ -101,9 +101,7 @@
     margin-right: 7px;
 }
 .footer{
-    border-radius: 45px 45px 0px 0px;
-    background: var(--Dark, #191A23);
-    max-width: 1240px;
+    max-width: 1440px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -111,9 +109,17 @@
 .footer__wrep{
     display: flex;
     flex-direction: column;
-    max-width: 1120px;
+    max-width: 1220px;
     gap: 50px;
     width: 100%;
+    border-radius: 45px 45px 0px 0px;
+    background: var(--Dark, #191A23);
+    align-items: center;
+    color: #ffffff;
+    min-height: 430px;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 55px;
 }
 .footer__fiest{
     max-width: 1120px;
@@ -121,6 +127,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .footer__links{
     max-width: 500px;
@@ -143,6 +150,62 @@
     max-width: 1120px;
     justify-content: space-between;
     min-height: 184px;
+    width: 100%;
+}
+.footer__button{
+    border-radius: 7px;
+    background: var(--Green, #B9FF66);
+    padding: 7px;
+    width: 126px;
+}
+.footer__contact{
+    max-width: 332px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    height: 185px;
+}
+.footer__registration{
+    max-width: 634px;
+    min-height: 184px;
+    display: flex;
+    gap: 22px;
+    border-radius: 14px;
+    background: #292A32;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer__email{
+    border-radius: 14px;
+    border: 1px solid #FFF;
+    width: 285px;
+    height: 67px;
+    padding: 35px 22px;
+}
+.footer__button2{
+    border-radius: 14px;
+    background: var(--Green, #B9FF66);
+    width: 285px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__copyrait{
+    max-width: 1120px;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 20px;
+    height: 78px;
+    border-top: solid #FFF 2px;
 }
 
 /* media cueri*/
@@ -188,6 +251,21 @@
     }
     .footer__media{
         display: none;
+    }
+    .footer__text{
+        text-align: center;
+        align-items: center;
+    }
+    .footer__seckend,.footer__registration{
+        flex-direction: column;
+    }
+    .footer__copyrait{
+        justify-content: center;
+    }
+    .footer__seckend{
+        align-items: center;
+        max-width: 390px;
+        gap: 20px;
     }
 }
 @media screen  and (max-width: 600px){
